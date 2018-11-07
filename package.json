@@ -1,0 +1,39 @@
+{
+  "name": "vue-background-video",
+  "version": "1.0.0",
+  "description": "Simple component to render a video background in Vue.js",
+  "main": "dist/vue-background-video.umd.js",
+  "module": "dist/vue-background-video.esm.js",
+  "unpkg": "dist/vue-background-video.min.js",
+  "browser": {
+    "./sfc": "src/BackgroundVideo.vue"
+  },
+  "scripts": {
+    "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/vue-background-video.umd.js",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/vue-background-video.esm.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/vue-background-video.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrettIRL/vue-background-video.git"
+  },
+  "keywords": [
+    "vue",
+    "video",
+    "background",
+    "object-fit",
+    "cover"
+  ],
+  "author": "Brett Cocking",
+  "license": "MIT",
+  "homepage": "https://github.com/BrettIRL/vue-background-video#readme",
+  "devDependencies": {
+    "rollup": "^0.67.0",
+    "rollup-plugin-buble": "^0.19.4",
+    "rollup-plugin-terser": "^3.0.0",
+    "rollup-plugin-vue": "^4.3.2",
+    "vue": "^2.5.17",
+    "vue-template-compiler": "^2.5.17"
+  }
+}
