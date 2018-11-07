@@ -10,8 +10,8 @@
     <source 
       v-for="(source, index) in sources" 
       :key="index" 
-      :src="source.src"
-      :type="source.type"
+      :src="source"
+      :type="getSourceType(source)"
     >
     <img v-if="fallbackImg" :src="fallbackImg" alt="HTML 5 video unsupported by browser">
   </video>
@@ -49,7 +49,12 @@ export default {
       default: null
     }
   },
-  name: 'BackgroundVideo'
+  methods: {
+    getSourceType (src) {
+      var extension = src.substr(src.lastIndexOf('.') + 1)
+      return 'video/' + extension
+    }
+  }
 }
 </script>
 
