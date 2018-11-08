@@ -1,22 +1,22 @@
 {
-  "name": "vue-background-video",
+  "name": "vue-cover-video",
   "version": "1.0.0",
   "description": "Simple component to render a video background in Vue.js",
-  "main": "dist/vue-background-video.umd.js",
-  "module": "dist/vue-background-video.esm.js",
-  "unpkg": "dist/vue-background-video.min.js",
+  "main": "dist/vue-cover-video.umd.js",
+  "module": "dist/vue-cover-video.esm.js",
+  "unpkg": "dist/vue-cover-video.min.js",
   "browser": {
     "./sfc": "src/BackgroundVideo.vue"
   },
   "scripts": {
     "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
-    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/vue-background-video.umd.js",
-    "build:es": "rollup --config build/rollup.config.js --format es --file dist/vue-background-video.esm.js",
-    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/vue-background-video.min.js"
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/vue-cover-video.umd.js",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/vue-cover-video.esm.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/vue-cover-video.min.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BrettIRL/vue-background-video.git"
+    "url": "git+https://github.com/BrettIRL/vue-cover-video.git"
   },
   "keywords": [
     "vue",
@@ -27,7 +27,7 @@
   ],
   "author": "Brett Cocking",
   "license": "MIT",
-  "homepage": "https://github.com/BrettIRL/vue-background-video#readme",
+  "homepage": "https://github.com/BrettIRL/vue-cover-video#readme",
   "devDependencies": {
     "rollup": "^0.67.0",
     "rollup-plugin-buble": "^0.19.4",
