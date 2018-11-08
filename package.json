@@ -1,6 +1,6 @@
 {
   "name": "vue-cover-video",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple component to render a video background in Vue.js",
   "main": "dist/vue-cover-video.umd.js",
   "module": "dist/vue-cover-video.esm.js",
